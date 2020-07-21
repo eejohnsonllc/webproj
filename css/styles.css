@@ -1,0 +1,8 @@
+.has-bg-img {
+    background: url('https://media.giphy.com/media/31UBuTCiSUVOSRjTYp/giphy.gif')center center;
+    background-size: cover;
+}
+
+body {
+    font-family: Quicksand,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif
+}
