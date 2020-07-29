@@ -46,8 +46,7 @@
 
   }
   
-
-figure figcaption {
+ figure figcaption {
 	padding: 2em;
 	color: rgba(0, 0, 0, 0.644);
 	text-transform: uppercase;
@@ -78,8 +77,10 @@ figure.effect-chico figcaption {
 	padding: 3em;
 }
 
+
+
 figure.effect-chico figcaption::before {
-	position: absolute;
+	position: relative;
 	top: 30px;
 	right: 30px;
 	bottom: 30px;
@@ -89,6 +90,7 @@ figure.effect-chico figcaption::before {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
 
 figure.effect-chico figcaption::before,
 figure.effect-chico p {
@@ -100,6 +102,8 @@ figure.effect-chico p {
 figure.effect-chico h2 {
 	padding: 20% 0 20px 0;
 }
+
+
 
 figure.effect-chico p {
 	margin: 0 auto;
