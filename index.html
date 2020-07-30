@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML>
 
 <html lang="en" class="has-navbar-fixed-top">
 
@@ -11,11 +11,17 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <!-- https://kenwheeler.github.io/slick/slick/slick-theme.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -28,7 +34,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/scripts.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 </head>
 
@@ -78,9 +86,21 @@
     <section id='hero'>
         <section class="hero is-large has-bg-img">
             <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title has-text-white	">Title 1</h1>
-                    <h2 class="subtitle has-text-white	">Subtitle 3</h2>
+                <div class="container has-text-centered text">
+                    <h1 class=" has-text-white title is-1	" style="display: inline-block;">We are...</h1>
+                    <br>
+                    <div class="slidingVertical">
+                        <span class="subtitle">Professional</span>
+                        <span class="subtitle">Dedicated</span>
+                        <span class="subtitle">Passionate</span>
+                    </div>
+
+                    <!-- <span class="word green">beautiful.</span>
+                        <span class="word midnight">cheap.</span> -->
+
+
+
+                    <!-- <h2 class="subtitle has-text-white	">Subtitle 3</h2> -->
                 </div>
             </div>
         </section>
@@ -91,20 +111,24 @@
         <!-- <br> -->
         <div class="container" style="margin-top: 5rem;">
 
-            <h1>Title 1</h1>
-            <h3>Subtitles</h2>
+            <h1>Services</h1>
+            <h3>What we can do for you</h3>
         </div>
 
 
-        <div class="container" style="padding-left: 10em;padding-right: 10em;">
+        <div class="container" id='service_con' style="">
 
-            <div class="columns">
+            <div class="columns" id='slideshow'>
                 <div class="column is-half">
                     <figure class="image is-4by3"><img class="is-skill-icon"
                             src="https://www.edureka.co/blog/wp-content/uploads/2018/12/Data-Analytics-What-is-Data-Analytics-Edureka.png">
                     </figure>
                     <h4>Data Analytics</h4>
-                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    <p>Rather than going for a plan that you think is best, data-driven decision-making is a method that
+                        uses data to guide business decision making. Often referred to as DDDM or information-based
+                        decision-making, we help you bring together historical
+                        information to analyze trends and make decisions for the future based on what has worked in the
+                        past – rather than decisions based on intestinal feelings , opinions or bias.</p>
 
                 </div>
 
@@ -112,8 +136,31 @@
                     <figure class="image is-4by3"><img class="is-skill-icon"
                             src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/12/Data-What-is-Data-Analytics-Edureka-375x300.png">
                     </figure>
-                    <h4>Data Analytics</h4>
-                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    <h4>Data Visualization</h4>
+                    <p>A picture worth a thousand words.The whole point of presenting your data in a visual format is to
+                        engage the audience and make your data more readable and digestible. </p>
+
+                </div>
+
+                <div class="column is-half">
+                    <figure class="image is-4by3"><img class="is-skill-icon"
+                            src="https://dashtechinc.com/wp-content/uploads/2020/03/Video-Data-Analytics-for-Social-Events.png">
+                    </figure>
+                    <h4>Policy Evaluation</h4>
+                    <p>Policy evaluation applies evaluation principles and methods to examine the content,
+                        implementation or impact of a policy. Evaluation is the activity through which we develop an
+                        understanding of the merit, worth, and utility of a policy.</p>
+
+                </div>
+
+                <div class="column is-half">
+                    <figure class="image is-4by3"><img class="is-skill-icon"
+                            src="https://www.tex-ai.com/wp-content/uploads/2019/12/Data-Analytics-Text-Summarization.png">
+                    </figure>
+                    <h4>Strategy Research</h4>
+                    <p>A Research Strategy is a step-by-step plan of action that gives direction to your thoughts and
+                        efforts, enabling you to conduct research systematically and on schedule to produce quality
+                        results and detailed reporting.</p>
 
                 </div>
 
@@ -131,12 +178,12 @@
         <!-- <br> -->
         <div class="container" style="margin-top: 5rem;">
 
-            <h1>Title 1</h1>
-            <h3>Subtitles</h2>
+            <h1>Portfolio</h1>
+            <h3>See some of our work samples</h2>
         </div>
 
 
-        <div class="container" style="padding-left: 10em;padding-right: 10em;">
+        <div class="container" style="">
 
 
             <div class="columns is-multiline is-mobile is-9 is-8-mobile" id='grid'>
@@ -145,7 +192,10 @@
 
             </div>
 
-            <button class="button is-dark">View More</button>
+            <button class="button is-dark" disabled>View More</button>
+
+
+
 
         </div>
 
@@ -158,44 +208,52 @@
 
     <section class="section is-medium is-white has-text-centered has-border-top">
         <div class="container is-narrow">
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <!-- <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">Awards</h1>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <!-- <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">Awards</h1>
              -->
-             <h1 class="">Awards</h1>
-             <h3>Subtitles</h2>
+                    <h1 class="">Awards</h1>
+                    <h3>Subtitles</h2>
+                </div>
             </div>
-          </div>
-          <div class="awd-grid">
-            <div class="columns is-multiline is-mobile">
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
-              <div class="column is-half-mobile is-one-quarter-tablet">
-                <figure class="image is-2x1"><img class="awd-logo" src="https://bulma.io/images/placeholders/1280x960.png"></figure>
-              </div>
+            <div class="awd-grid">
+                <div class="columns is-multiline is-mobile">
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                    <div class="column is-half-mobile is-one-quarter-tablet">
+                        <figure class="image is-2x1"><img class="awd-logo"
+                                src="https://bulma.io/images/placeholders/1280x960.png"></figure>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
 
@@ -209,13 +267,13 @@
     <section class="pagefooter">
         <footer class="footer has-background-dark	">
             <div class="content has-text-centered has-text-white">
-              <div>
-                <a href="/">E.E. Johnson Consulting LLC</a> |
-                <a href="/">email@email.com</a> |
-                <p style="display: inline-flex;">919-000-000</p>
-              </div>
+                <div>
+                    <a href="/">E.E. Johnson Consulting LLC</a> |
+                    <a href="/">email@email.com</a> |
+                    <p style="display: inline-flex;">919-000-000</p>
+                </div>
             </div>
-          </footer>
+        </footer>
     </section>
 </body>
 
