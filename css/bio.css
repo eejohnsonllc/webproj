@@ -1,23 +1,53 @@
-.left-col{
-    padding: 1.5rem 2rem 3rem 0.75rem;
-    
+body {
+	font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+
+.has-bg-img {
+	background: url('https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1484544808355-8ec84e534d75-1.jpg')right bottom;
+	background-size: cover;
+	transition: all 2s ease-in;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+ }
+
+.left-col {
+	padding: 1.5rem 2rem 3rem 0.75rem;
+
 }
 
 .footer {
-    bottom: 0;
-    color: #707070;
-    height: 2em;
-    left: 0;
-    position: relative; 
-    font-size: small;
-    width:100%;
+	bottom: 0;
+	color: #707070;
+	height: 2em;
+	left: 0;
+	position: relative;
+	font-size: small;
+	width: 100%;
 }
 
 
-.bioconent{
+.bioconent {
 
-        margin: auto;
-        transition: .3s ease;
+	margin: auto;
+	transition: .3s ease;
 
 }
 
@@ -25,28 +55,28 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
     transform: translateY(-10px) scale(1.02);
   } */
-.bioconent:hover p  {
-    background-position: -100% 0;
-  }
+.bioconent:hover p {
+	background-position: -100% 0;
+}
 
-  p {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #c3c8da 50%);
-    background-size: 200%;
-    background-position: 0 0;
-    display: inline;
-    transition: .5s ease-in-out;
-    line-height: 1.5;
-    /* font-family: raleway, arial, sans-serif; */
-    /* text-transform: uppercase; */
-  }
+p {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #c3c8da 50%);
+	background-size: 200%;
+	background-position: 0 0;
+	display: inline;
+	transition: .5s ease-in-out;
+	line-height: 1.5;
+	/* font-family: raleway, arial, sans-serif; */
+	/* text-transform: uppercase; */
+}
 
-  p::first-letter {
+p::first-letter {
 
-    font-size: 200%;
+	font-size: 200%;
 
-  }
-  
- figure figcaption {
+}
+
+figure figcaption {
 	padding: 2em;
 	color: rgba(0, 0, 0, 0.644);
 	text-transform: uppercase;
