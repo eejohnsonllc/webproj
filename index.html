@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/hover.css">
 
     <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon//favicon-32x32.png">
@@ -71,10 +73,34 @@
                     <a class="navbar-item" href="/">
                         Home
                     </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Portfolio
+                        </a>
 
-                    <a class="navbar-item" href="/por.html">
+                        <div class="navbar-dropdown" id='nav_por'>
+                            <a class="navbar-item" href="/top1.html">
+                                Topic 1
+                            </a>
+                            <a class="navbar-item" href="/top2.html">
+                                Topic 2
+                            </a>
+                            <a class="navbar-item" href="/top3.html">
+                                Topic 3
+                            </a>
+                            <a class="navbar-item" href="/top4.html">
+                                Topic 4
+                            </a>
+                            <a class="navbar-item" href="/top5.html">
+                                Topic 5
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- <a class="navbar-item" href="/por.html">
                         Portfolio
-                    </a>
+                    </a> -->
                     <a class="navbar-item" href="/about.html">
                         About Us
                     </a>
@@ -99,7 +125,9 @@
         <section class="hero is-large has-bg-img">
             <div class="hero-body">
                 <div class="container has-text-centered text">
-                    <h1 class=" has-text-white title is-1	" style="display: inline-block;">We are...</h1>
+                    <h1 class=" has-text-white title is-1	" style="display: inline-block;	font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
+                    text-transform: uppercase;">We are Modern Websites...</h1>
                     <br>
                     <div class="slidingVertical">
                         <span class="subtitle">Professional</span>
@@ -132,7 +160,7 @@
 
             <div class="columns" id='slideshow'>
                 <div class="column is-half">
-                    <figure class="image is-4by3"><img class="is-skill-icon"
+                    <figure class="image is-4by3 "><img class="is-skill-icon bouncein"
                             src="https://www.edureka.co/blog/wp-content/uploads/2018/12/Data-Analytics-What-is-Data-Analytics-Edureka.png">
                     </figure>
                     <h4>Data Analytics</h4>
@@ -145,7 +173,7 @@
                 </div>
 
                 <div class="column is-half">
-                    <figure class="image is-4by3"><img class="is-skill-icon"
+                    <figure class="image is-4by3"><img class="is-skill-icon bouncein"
                             src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/12/Data-What-is-Data-Analytics-Edureka-375x300.png">
                     </figure>
                     <h4>Data Visualization</h4>
@@ -155,7 +183,7 @@
                 </div>
 
                 <div class="column is-half">
-                    <figure class="image is-4by3"><img class="is-skill-icon"
+                    <figure class="image is-4by3"><img class="is-skill-icon bouncein"
                             src="https://dashtechinc.com/wp-content/uploads/2020/03/Video-Data-Analytics-for-Social-Events.png">
                     </figure>
                     <h4>Policy Evaluation</h4>
@@ -166,7 +194,7 @@
                 </div>
 
                 <div class="column is-half">
-                    <figure class="image is-4by3"><img class="is-skill-icon"
+                    <figure class="image is-4by3"><img class="is-skill-icon bouncein"
                             src="https://www.tex-ai.com/wp-content/uploads/2019/12/Data-Analytics-Text-Summarization.png">
                     </figure>
                     <h4>Strategy Research</h4>
@@ -204,8 +232,8 @@
 
             </div>
 
-            <button class="button is-dark" disabled>View More</button>
-
+            <a onclick="clicknav()" id="viewmore"><button class="button is-dark">View More</button>
+            </a>
 
 
 
@@ -271,7 +299,7 @@
     <section class="section has-text-centered">
 
         <p>Do you have a project you’d like us to work on?</p>
-        <a href="/contact.html"><button class="button is-dark" >Contact Us</button></a>
+        <a href="/contact.html"><button class="button is-dark">Contact Us</button></a>
     </section>
 
 
@@ -286,6 +314,22 @@
             </div>
         </footer>
     </section>
+
+    <script>
+
+function clicknav() {
+    if($('.has-dropdown').hasClass('is-active')){
+        $('.has-dropdown').removeClass('is-active')
+
+
+    } else{
+    $('.has-dropdown').addClass('is-active')
+
+    }
+
+
+}
+    </script>
 </body>
 
 </html>

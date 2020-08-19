@@ -1,4 +1,8 @@
-
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	/* text-transform: uppercase; */
+   }
 
 .has-bg-img {
     background: url('/pictures/0fcb77_4df6e0291bd14ded8dc70c75ed7d7df2_mv2.gif') left bottom;

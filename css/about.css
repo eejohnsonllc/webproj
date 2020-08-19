@@ -2,6 +2,12 @@ body {
 	font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	/* text-transform: uppercase; */
+   }
+
 
 .has-bg-img {
 	background: url('https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1518081461904-9d8f136351c2-1024x660.jpg')right center;

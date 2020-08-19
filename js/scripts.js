@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     let $tags = $card.find('.tags')
         pro.projectkeywords.map(function(word) {
-            let $tag = $('<span class="tag"></span>').html(word)
+            let $tag = $('<span class="tag pop"></span>').html(word)
             $tags.append($tag)
         })
 
