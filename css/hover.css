@@ -4,10 +4,35 @@ a {
     -moz-transition: background-color 1s;
     -o-transition: background-color 1s;
     transition: background-color 0.5s;
+    text-decoration: none;
 }
+
+
+
 a.navbar-item:hover {
-    color: red;
+    color: rgb(46, 51, 56);
+    text-decoration: none;
 }
+
+
+
+a.navbar-item:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(41, 84, 224);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.navbar-item:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 
 
 .grow {
@@ -96,3 +121,74 @@ a.navbar-item:hover {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+
+.zoomin {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoomin:hover{
+	width: 350px;
+}
+
+
+
+
+.flash:hover{
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.opac {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.opac:hover {
+	opacity: .5;
+}
+
+
+/*effect-underline*/
+/* a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+} */

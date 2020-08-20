@@ -20,7 +20,7 @@ $(document).ready(function () {
       let $card = $(`<div class="column is-one-third-desktop is-full-mobile aos-init aos-animate">
       <div class="card-image">
         <figure class="image is-4by3">
-          <a href=${pro.link} target="_blank"><img src="${pro.projectimg}" alt=""></a>
+          <a href=${pro.link} target="_blank"><img class='opac' src="${pro.projectimg}" alt=""></a>
         </figure>
       </div>
       <div class="card-content">
