@@ -9,7 +9,7 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 1000,
   });
 
     // adding grid of cards
