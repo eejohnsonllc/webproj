@@ -1,3 +1,9 @@
+#nav_por > .navbar-item{
+
+    width: 20vw;
+    white-space:normal;
+
+}
 .arrow{
     position: relative;
     top: 50%;
