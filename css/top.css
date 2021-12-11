@@ -121,7 +121,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .has-bg-img {
-    background: url('https://pbastl.com/wp-content/uploads/2016/06/Dollarphotoclub_85570862.jpg') left bottom;
+    /* background: url('https://pbastl.com/wp-content/uploads/2016/06/Dollarphotoclub_85570862.jpg') left bottom; */
+    background-color: #ffd166;
     background-size: cover;
     transition: all 2s ease-in;
 	-webkit-animation-duration: 5s;

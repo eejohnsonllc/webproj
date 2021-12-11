@@ -23,9 +23,10 @@ export let projects = [
 },
 {
     projectid: 3,
-    projectname: 'Research C',
-    projectkeywords: ['Social Media', 'Library Service', 'Information Behavior'],
-    projctdescription: 'DescriptionW ',
+    projectname: 'Carolina Across 100 Initiative Survey Data Analysis',
+    projectkeywords: ['COVID-19', 'Survey Analsysi', 'Data Visualization'],
+    projctdescription: "\
+    Using a suite of data analytics tools, we were able to identify common areas of concern and trends in expectations about recovery from the pandemic. We then created visualizations to present these trends to the initiative's stakeholders, to inform their decisions about how the university can help communities across the state." ,
     projectspan: [],
     projectimg: './pictures/proj2.gif'
 }  ]

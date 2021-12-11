@@ -26,7 +26,8 @@ h1, h2, h3, h4, h5, h6 {
    }
 
 .has-bg-img {
-    background: url('https://www.lasermarketsresearch.com/wp-content/uploads/2016/09/ContactHeader.jpg')center center ;
+    /* background: url('https://www.lasermarketsresearch.com/wp-content/uploads/2016/09/ContactHeader.jpg')center center ; */
+    background-color: #bee1e6;
     background-size: cover;
     content: "";
     display: block;

@@ -82,7 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .has-bg-img {
-	background: url('https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1518081461904-9d8f136351c2-1024x660.jpg')right center;
+	/* background: url('https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1518081461904-9d8f136351c2-1024x660.jpg')right center; */
+	background-color: #cddafd;
 	background-size: cover;
 	transition: all 2s ease-in;
 	-webkit-animation-duration: 5s;
