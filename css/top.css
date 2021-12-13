@@ -4,7 +4,12 @@ h1, h2, h3, h4, h5, h6 {
 	/* text-transform: uppercase; */
    }
 
+   #nav_por > .navbar-item{
 
+    width: 20vw;
+    white-space:normal;
+
+}
 #backbutton {
     display: inline-block;
     background-color: rgb(168, 170, 168);

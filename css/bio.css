@@ -1,3 +1,10 @@
+
+#nav_por > .navbar-item{
+
+    width: 20vw;
+    white-space:normal;
+
+}
 body {
 	font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif
 }
