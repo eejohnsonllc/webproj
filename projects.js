@@ -28,5 +28,7 @@ export let projects = [
     projctdescription: "\
     Using a suite of data analytics tools, we were able to identify common areas of concern and trends in expectations about recovery from the pandemic. We then created visualizations to present these trends to the initiative's stakeholders, to inform their decisions about how the university can help communities across the state." ,
     projectspan: [],
-    projectimg: 'pictures/CX100 gif for home page.gif'
+    projectimg: 'pictures/CX100 gif for home page.gif',
+    link:'https://public.tableau.com/views/Q21EmploymentInstabilityDescriptives/descriptive?:language=en-US&:display_count=n&:origin=viz_share_link'
+
 }  ]
