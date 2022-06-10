@@ -48,6 +48,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
+#cards-columns:hover > .column:not(:hover) {
+    filter: brightness(0.85) saturate(0) contrast(1.2) blur(3px);
+  }
+
+.card:hover{
+    transform: scale(1.05) translateZ(0);
+  }
+
+.card{
+  transform-origin: center;
+  transition: 
+    filter 500ms linear,
+    transform 500ms linear;
+    
+  
+}
+  
+#cards-columns{transition: all 0.4s;}
 .fade-out-siblings {
     --gutter: 2.5rem;
   
@@ -135,6 +153,18 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both
 }
+
+.has-bg-img-project {
+  /* background: url('https://pbastl.com/wp-content/uploads/2016/06/Dollarphotoclub_85570862.jpg') left bottom; */
+  background-color: #66edff;
+  background-size: cover;
+  transition: all 2s ease-in;
+-webkit-animation-duration: 5s;
+animation-duration: 5s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both
+}
+
 
 body {
     font-family: 'Lato', sans-serif,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif
