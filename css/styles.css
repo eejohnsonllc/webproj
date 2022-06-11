@@ -1,11 +1,49 @@
+.underconstruction {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans Light';
+    font-variant: small-caps;
+    color: #fff;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+
+.transparent_card{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+
+  }
+
+
+.carousel-card {
+    top: 50%;  
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  
 .index-heading{
     font-size: 4rem !important;
     font-weight: bold !important;
 }
 
-#nav_por>.navbar-item {
+.dropdown-menu>li {
 
-    width: 20vw;
+    width: 15vw;
     white-space: normal;
 
 }
