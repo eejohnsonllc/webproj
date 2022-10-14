@@ -34,7 +34,7 @@ $(document).ready(function () {
                     </figure>
                   </div>
                   <div class="card-content">
-                    <div class="content">
+                    <div class="card-inner-content">
                       <h4>${pro.projectname}</h4>
                       <p>${pro.projctdescription}</p>
                       <button class="button is-link is-light"><a href="${pro.link}">See More</a></button>
@@ -43,6 +43,12 @@ $(document).ready(function () {
                 </div>
               </div>`)
 
+        // console.log(pro)
+        if ('tool_link' in pro){
+                  console.log(pro)
+                  let $additional_button=$(`<button class="button is-info is-light"><a href="${pro.tool_link}">Use This Tool</a></button>`)
+                  $temp_card.find('.card-inner-content').append($additional_button)
+                }
 
             $temp_card.appendTo($columns).fadeIn(300)
       })
@@ -71,8 +77,12 @@ $(document).ready(function () {
               </div>
             </div>
           </div>`)
-
-
+        // console.log(pro)
+        if ('tool_link' in pro){
+            console.log(pro)
+            let $additional_button=$(`<button class="button is-info is-light"><a href="${pro.tool_link}">Use This Tool</a></button>`)
+            $temp_card.find('.card-inner-content').append($additional_button)
+          }
         $temp_card.appendTo($columns).fadeIn(300)
         // $columns.fadeIn()
       })

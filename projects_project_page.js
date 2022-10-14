@@ -36,7 +36,8 @@ export let projects = [{
         projectspan: [],
         tab: ['data-viz-tab','data-analysis-tab'],
         projectimg: './pictures/grant.png',
-        link: '/top4.html'
+        link: '/top4.html',
+        tool_link:'http://grantabstract-dev.us-east-1.elasticbeanstalk.com/'
 
     },
 ]
